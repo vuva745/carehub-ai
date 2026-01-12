@@ -1,0 +1,9 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#2c3e50"/>
+  <rect x="50" y="50" width="300" height="200" fill="#34495e" rx="5"/>
+  <circle cx="200" cy="150" r="30" fill="#ecf0f1"/>
+  <rect x="170" y="180" width="60" height="40" rx="3" fill="#95a5a6"/>
+  <text x="200" y="250" text-anchor="middle" font-family="Arial" font-size="14" fill="#ecf0f1">Fall Event Video</text>
+  <text x="200" y="270" text-anchor="middle" font-family="Arial" font-size="12" fill="#bdc3c7">06:53</text>
+</svg>
+

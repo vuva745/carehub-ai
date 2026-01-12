@@ -2,11 +2,11 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { User, Clock, Smartphone, CheckCircle2, MapPin, User2, RefreshCw } from "lucide-react";
-import woundScan from "@/assets/wound-scan.jpg";
 
-export const WoundCareAI = () => {
+const WoundCareAI = () => {
   return (
-    <div className="space-y-6">
+    <div className="px-8 pb-8 pt-0 space-y-6 border-2 border-cyan-400/50 rounded-lg shadow-[0_0_20px_rgba(34,211,238,0.5)] shadow-cyan-400/50 min-w-0">
+      <h2 className="text-3xl font-bold text-foreground">WoundCare AI</h2>
       {/* Client Info Header */}
       <Card>
         <CardContent className="pt-6">
@@ -17,7 +17,7 @@ export const WoundCareAI = () => {
               </div>
               <div>
                 <h2 className="text-2xl font-bold">Client Name</h2>
-                <p className="text-lg text-muted-foreground">67 yars Old</p>
+                <p className="text-lg text-muted-foreground">67 years Old</p>
               </div>
             </div>
             <div className="text-right">
@@ -31,7 +31,7 @@ export const WoundCareAI = () => {
             </div>
             <div className="flex items-center gap-2">
               <span className="font-semibold">Next Visit:</span>
-              <span>Today at 10dat 11:00</span>
+              <span>Today at 10am to 12pm</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="font-semibold">Devices:</span>
@@ -85,7 +85,7 @@ export const WoundCareAI = () => {
           <CardContent className="space-y-4">
             <div className="relative rounded-lg overflow-hidden">
               <img
-                src={woundScan}
+                src="/images/wound.png"
                 alt="Wound Scan"
                 className="w-full h-auto rounded-lg"
               />
@@ -103,7 +103,7 @@ export const WoundCareAI = () => {
             <div>
               <h4 className="font-semibold mb-2">AI Analysis</h4>
               <ul className="space-y-1 text-sm">
-                <li>• Siight redness</li>
+                <li>• Slight redness</li>
                 <li>• Moderate exudate</li>
                 <li>• No signs of infection</li>
               </ul>
@@ -168,3 +168,5 @@ export const WoundCareAI = () => {
     </div>
   );
 };
+
+export default WoundCareAI;

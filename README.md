@@ -1,73 +1,102 @@
-# Welcome to your Lovable project
+# NeoCare - Healthcare Management System
 
-## Project info
+A comprehensive healthcare management platform built with modern web technologies for managing patient care, medication tracking, wound care, fall detection, and medical device monitoring.
 
-**URL**: https://lovable.dev/projects/f8f2dc3b-24a6-4d42-8563-d2699c5c8f19
+## Features
 
-## How can I edit this code?
+- **Care Overview**: Real-time AI-powered live monitoring of patient care sessions
+- **Medication AI Scan**: Automated medication identification and verification
+- **WoundCare AI**: Advanced wound assessment and tracking
+- **FallRadar AI**: Intelligent fall detection and prevention system
+- **Planning & Routes**: Optimized route planning for healthcare visits
+- **AI Triage**: Phone support system with intelligent triage
+- **Doctor & Family Portal**: Communication and updates portal
+- **Finance & Billing**: Financial management and reporting
+- **Devices & Hardware**: Medical device inventory and management
+- **Household Help**: Home care assistance scheduling
+- **Materials & Stock**: Inventory management with AI assistance
+- **CareTV Sync**: Video upload and synchronization
+- **AI Reports & Insights**: Analytics and reporting dashboard
 
-There are several ways of editing your application.
+## Technology Stack
 
-**Use Lovable**
+- **Vite** - Fast build tool and development server
+- **TypeScript** - Type-safe JavaScript
+- **React** - UI library
+- **shadcn-ui** - High-quality component library
+- **Tailwind CSS** - Utility-first CSS framework
+- **Recharts** - Data visualization library
+- **Lucide React** - Icon library
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f8f2dc3b-24a6-4d42-8563-d2699c5c8f19) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v18 or higher recommended)
+- npm or yarn package manager
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd carehub-ai
+```
 
-Follow these steps:
+2. Install dependencies:
+```bash
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and navigate to `http://localhost:3000`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run build:dev` - Build in development mode
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+carehub-ai/
+├── src/
+│   ├── components/        # Reusable UI components
+│   │   ├── tabs/         # Tab-specific components
+│   │   └── ui/           # shadcn-ui components
+│   ├── pages/            # Page components
+│   ├── lib/              # Utility functions
+│   └── main.tsx          # Application entry point
+├── public/               # Static assets
+└── package.json          # Dependencies and scripts
+```
 
-This project is built with:
+## Development
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The application uses a tab-based navigation system with 13 main sections. Each tab is a self-contained component located in `src/components/tabs/`.
 
-## How can I deploy this project?
+### Key Components
 
-Simply open [Lovable](https://lovable.dev/projects/f8f2dc3b-24a6-4d42-8563-d2699c5c8f19) and click on Share -> Publish.
+- **Index.tsx**: Main application layout with sidebar navigation
+- **Tab Components**: Individual feature implementations in `src/components/tabs/`
 
-## Can I connect a custom domain to my Lovable project?
+## Building for Production
 
-Yes, you can!
+To create a production build:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```bash
+npm run build
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+The build output will be in the `dist/` directory.
+
+## License
+
+This project is proprietary software. All rights reserved.

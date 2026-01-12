@@ -1,0 +1,7 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#e8f5e9"/>
+  <circle cx="100" cy="80" r="40" fill="#66bb6a"/>
+  <rect x="60" y="130" width="80" height="40" rx="5" fill="#66bb6a"/>
+  <text x="100" y="190" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Emma Nolan</text>
+</svg>
+
