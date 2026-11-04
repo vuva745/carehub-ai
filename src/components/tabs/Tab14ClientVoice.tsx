@@ -317,7 +317,7 @@ export function Tab14ClientVoice() {
   };
 
   return (
-    <div className="p-6 space-y-6 animate-fade-in bg-gradient-to-br from-purple-50 via-purple-100/50 to-violet-100/30 dark:from-purple-950/20 dark:via-background dark:to-background min-h-full border-2 border-purple-400/50 shadow-[0_0_20px_rgba(168,85,247,0.5)] rounded-[30px] overflow-hidden font-sans">
+    <div className="p-4 sm:p-6 space-y-6 animate-fade-in bg-gradient-to-br from-purple-50 via-purple-100/50 to-violet-100/30 dark:from-purple-950/20 dark:via-background dark:to-background min-h-full border-2 border-purple-400/50 shadow-[0_0_20px_rgba(168,85,247,0.5)] rounded-[30px] overflow-hidden font-sans">
 
       {/* Mockup Top Bar */}
       <div className="flex items-center justify-between px-6 py-4 bg-gradient-to-r from-purple-900 to-indigo-900 text-white shadow-md">
@@ -781,7 +781,7 @@ export function Tab14ClientVoice() {
                     </DialogHeader>
                     <div className="grid gap-4 mt-2">
                       <Calendar mode="single" className="rounded-md border shadow" />
-                      <div className="grid grid-cols-2 gap-2">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         <Button variant="outline" size="sm">Morning</Button>
                         <Button variant="outline" size="sm">Afternoon</Button>
                       </div>

@@ -55,9 +55,9 @@ const FallRadarAI = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         {/* Client Overview */}
-        <Card className="p-6 space-y-4">
+        <Card className="p-4 sm:p-6 space-y-4">
           <h3 className="text-lg font-semibold text-primary">Client Overview</h3>
           <div className="flex items-start gap-4">
             <img
@@ -85,7 +85,7 @@ const FallRadarAI = () => {
         </Card>
 
         {/* FallRadar Status */}
-        <Card className="p-6 space-y-4">
+        <Card className="p-4 sm:p-6 space-y-4">
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-semibold text-primary">FallRadar Status</h3>
             <div className="flex gap-2">
@@ -127,7 +127,7 @@ const FallRadarAI = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-3 pt-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-3">
             <div className="text-center">
               <MapPin className="w-6 h-6 mx-auto text-success mb-1" />
               <p className="text-xs text-muted-foreground">Location</p>
@@ -144,7 +144,7 @@ const FallRadarAI = () => {
         </Card>
 
         {/* FallAlert Status */}
-        <Card className="p-6 space-y-4 bg-primary/5 border-primary/20">
+        <Card className="p-4 sm:p-6 space-y-4 bg-primary/5 border-primary/20">
           <h3 className="text-lg font-semibold text-primary">FallAlert Sent</h3>
           <div className="flex items-center justify-center py-4">
             <div className="relative w-full aspect-square rounded-lg overflow-hidden">
@@ -248,7 +248,7 @@ const FallRadarAI = () => {
       </Card>
 
       {/* Risk Factors & Recommendations */}
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <Card className="p-6">
           <h3 className="text-lg font-semibold text-primary mb-4">Risk Factors Detected</h3>
           <div className="space-y-3">
@@ -316,7 +316,7 @@ const FallRadarAI = () => {
           </DialogHeader>
           {selectedSensor === 'location' && (
             <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-lg bg-muted">
                   <p className="text-sm text-muted-foreground">Status</p>
                   <p className="text-lg font-bold text-success">{sensorData.location.status}</p>
@@ -356,7 +356,7 @@ const FallRadarAI = () => {
           )}
           {selectedSensor === 'radar' && (
             <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-lg bg-muted">
                   <p className="text-sm text-muted-foreground">Status</p>
                   <p className="text-lg font-bold text-success">{sensorData.radar.status}</p>
@@ -417,7 +417,7 @@ const FallRadarAI = () => {
           )}
           {selectedSensor === 'aiMonitor' && (
             <div className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-lg bg-muted">
                   <p className="text-sm text-muted-foreground">Status</p>
                   <p className="text-lg font-bold text-success">{sensorData.aiMonitor.status}</p>

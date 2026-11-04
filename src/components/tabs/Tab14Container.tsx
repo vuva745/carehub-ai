@@ -10,7 +10,7 @@ export function Tab14Container() {
     <div className="flex flex-col h-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="px-6 pt-4">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-[400px] grid-cols-2">
+          <TabsList className="grid w-full max-w-[400px] grid-cols-2">
             <TabsTrigger value="client-voice">Client Voice & Wellbeing</TabsTrigger>
             <TabsTrigger value="voice-slogans">Live Voice Slogans</TabsTrigger>
           </TabsList>

@@ -151,7 +151,7 @@ const MedicationAIScan = () => {
           <CardHeader>
             <CardTitle>7D-Proof Status (Auto Logged)</CardTitle>
           </CardHeader>
-          <CardContent className="grid grid-cols-2 gap-4 text-sm">
+          <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div className="space-y-1">
               <p className="text-muted-foreground">Time Stamp</p>
               <p className="text-muted-foreground">AI Verific</p>
@@ -309,7 +309,7 @@ const MedicationAIScan = () => {
 
               <div className="p-3 bg-muted rounded-lg">
                 <p className="text-xs text-muted-foreground mb-2">7D-Proof Status:</p>
-                <div className="grid grid-cols-2 gap-2 text-xs">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
                   <div>
                     <span className="text-muted-foreground">Time Stamp:</span>
                     <span className="ml-2 font-medium">{new Date().toLocaleString()}</span>

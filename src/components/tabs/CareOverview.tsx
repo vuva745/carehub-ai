@@ -196,7 +196,7 @@ const CareOverview = () => {
           <CardHeader>
             <CardTitle>7D-Proof Log – Automated</CardTitle>
           </CardHeader>
-          <CardContent className="grid grid-cols-2 gap-4">
+          <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <p className="text-sm text-muted-foreground">Time Stamp</p>
               <p className="text-sm text-muted-foreground">Nurse ID</p>
@@ -369,7 +369,7 @@ const CareOverview = () => {
           <DialogHeader>
             <DialogTitle>Record Vitals</DialogTitle>
           </DialogHeader>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <Label htmlFor="blood-pressure-systolic">Blood Pressure (Systolic)</Label>
               <Input

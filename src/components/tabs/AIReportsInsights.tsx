@@ -7,13 +7,13 @@ const AIReportsInsights = () => {
   return (
     <div className="px-8 pb-8 pt-0 space-y-6 border-2 border-cyan-400/50 rounded-lg shadow-[0_0_20px_rgba(34,211,238,0.5)] shadow-cyan-400/50 min-w-0">
       <div className="flex items-center justify-between">
-        <h2 className="text-5xl font-bold text-foreground">AI Reports & Insights</h2>
+        <h2 className="text-3xl sm:text-5xl font-bold text-foreground">AI Reports & Insights</h2>
         <span className="text-lg text-muted-foreground">April 25, 2024</span>
       </div>
 
       {/* Metrics Overview */}
-      <Card className="p-8 bg-card border-2 border-border">
-        <div className="grid grid-cols-5 gap-8">
+      <Card className="p-4 sm:p-8 bg-card border-2 border-border">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="text-center border-r border-border">
             <p className="text-7xl font-bold">452</p>
             <p className="text-sm text-muted-foreground mt-2 uppercase tracking-wide">UPDATES</p>
@@ -37,7 +37,7 @@ const AIReportsInsights = () => {
         </div>
       </Card>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {/* Trends Chart */}
         <Card className="p-6">
           <h3 className="text-2xl font-bold mb-6">Trends</h3>
@@ -107,7 +107,7 @@ const AIReportsInsights = () => {
       </div>
 
       {/* Risk Alerts - Two Columns */}
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <Card className="p-6">
           <h3 className="text-2xl font-bold mb-6">Risk Alerts</h3>
           <div className="space-y-3">
@@ -156,7 +156,7 @@ const AIReportsInsights = () => {
       </div>
 
       {/* Summary Card */}
-      <Card className="p-8 bg-gradient-to-br from-primary/10 to-accent/10 text-center">
+      <Card className="p-4 sm:p-8 bg-gradient-to-br from-primary/10 to-accent/10 text-center">
         <div className="flex items-center justify-center gap-4">
           <Activity className="w-12 h-12 text-primary" />
           <div>

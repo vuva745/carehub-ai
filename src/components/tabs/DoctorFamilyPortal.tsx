@@ -33,7 +33,7 @@ const DoctorFamilyPortal = () => {
         </Button>
       </div>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         {/* Patients List */}
         <Card className="p-6">
           <h3 className="text-lg font-semibold text-primary mb-4">PATIENTS</h3>
@@ -146,7 +146,7 @@ const DoctorFamilyPortal = () => {
       </div>
 
       {/* Additional Updates Section */}
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <Card className="p-6">
           <h3 className="text-lg font-semibold text-primary mb-4">Recent Activity Log</h3>
           <div className="space-y-3">

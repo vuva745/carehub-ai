@@ -106,7 +106,7 @@ const AITriage = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 mb-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <User className="w-4 h-4" />
@@ -132,7 +132,7 @@ const AITriage = () => {
             <p className="text-sm text-muted-foreground">{callSummary.aiAssessment}</p>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
               <h4 className="font-semibold mb-3">Symptoms Reported</h4>
               <div className="space-y-2">
@@ -159,7 +159,7 @@ const AITriage = () => {
         </Card>
 
         {/* Call Documentation */}
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <Card className="p-6">
             <h3 className="text-lg font-semibold text-primary mb-4">Call Documentation</h3>
             <div className="space-y-3">
@@ -593,9 +593,9 @@ const AITriage = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {/* Caller Info */}
-        <Card className="p-6 space-y-6">
+        <Card className="p-4 sm:p-6 space-y-6">
           <div>
             <h3 className="text-2xl font-bold">Rachel Woods</h3>
             <p className="text-muted-foreground">Age: 67</p>
@@ -644,7 +644,7 @@ const AITriage = () => {
         </Card>
 
         {/* Triage Assessment */}
-        <Card className="p-6 space-y-6">
+        <Card className="p-4 sm:p-6 space-y-6">
           <div className="space-y-4">
             <div className="p-4 rounded-lg bg-warning/10 border border-warning/20">
               <h3 className="text-xl font-bold mb-2">Check Blood Sugar</h3>

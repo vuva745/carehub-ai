@@ -117,7 +117,7 @@ const CareTVSync = () => {
       </div>
 
       {/* Upload Section */}
-      <Card className="p-8 bg-primary/5">
+      <Card className="p-4 sm:p-8 bg-primary/5">
         <Button 
           size="lg" 
           className="w-full h-24 text-2xl font-bold bg-primary hover:bg-primary/90"
@@ -129,30 +129,30 @@ const CareTVSync = () => {
       </Card>
 
       {/* Stats */}
-      <div className="grid grid-cols-3 gap-6">
-        <Card className="p-6 text-center border-l-4 border-warning">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <Card className="p-4 sm:p-6 text-center border-l-4 border-warning">
           <div className="flex items-center justify-center gap-2 mb-2">
             <Clock className="w-6 h-6 text-warning" />
             <h3 className="text-lg font-semibold text-muted-foreground">Pending Uploads</h3>
           </div>
-          <p className="text-6xl font-bold">14</p>
+          <p className="text-4xl sm:text-6xl font-bold">14</p>
         </Card>
 
-        <Card className="p-6 text-center border-l-4 border-primary">
+        <Card className="p-4 sm:p-6 text-center border-l-4 border-primary">
           <div className="flex items-center justify-center gap-2 mb-2">
             <Video className="w-6 h-6 text-primary" />
             <h3 className="text-lg font-semibold text-muted-foreground">Uploading</h3>
           </div>
-          <p className="text-6xl font-bold">3</p>
+          <p className="text-4xl sm:text-6xl font-bold">3</p>
           <p className="text-sm text-muted-foreground mt-2">Videos</p>
         </Card>
 
-        <Card className="p-6 text-center border-l-4 border-success">
+        <Card className="p-4 sm:p-6 text-center border-l-4 border-success">
           <div className="flex items-center justify-center gap-2 mb-2">
             <CheckCircle2 className="w-6 h-6 text-success" />
             <h3 className="text-lg font-semibold text-muted-foreground">Completed</h3>
           </div>
-          <p className="text-6xl font-bold">1224</p>
+          <p className="text-4xl sm:text-6xl font-bold">1224</p>
         </Card>
       </div>
 
@@ -194,7 +194,7 @@ const CareTVSync = () => {
       </Card>
 
       {/* AI Suggestions */}
-      <Card className="p-6 bg-card">
+      <Card className="p-4 sm:p-6 bg-card">
         <h3 className="text-xl font-bold text-foreground mb-4">AI Suggestions</h3>
         <ul className="space-y-3">
           <li className="flex items-start gap-3">

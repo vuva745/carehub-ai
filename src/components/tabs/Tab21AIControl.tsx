@@ -164,7 +164,7 @@ export function Tab21AIControl() {
   };
 
   return (
-    <div className="p-6 space-y-6 animate-fade-in bg-gradient-to-br from-purple-50 via-purple-100/50 to-violet-100/30 dark:from-purple-950/20 dark:via-background dark:to-background min-h-full border-2 border-purple-400/50 shadow-[0_0_20px_rgba(168,85,247,0.5)] rounded-lg">
+    <div className="p-4 sm:p-6 space-y-6 animate-fade-in bg-gradient-to-br from-purple-50 via-purple-100/50 to-violet-100/30 dark:from-purple-950/20 dark:via-background dark:to-background min-h-full border-2 border-purple-400/50 shadow-[0_0_20px_rgba(168,85,247,0.5)] rounded-lg">
       {loading ? (
         <div className="p-10 text-center text-purple-500">Loading AI Control Panel...</div>
       ) : (
@@ -246,7 +246,7 @@ export function Tab21AIControl() {
 
           {/* KPI Cards */}
           {data?.layout?.find((l: any) => l.type === "kpi_cards") && (
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {data.layout.find((l: any) => l.type === "kpi_cards").items.map((kpi: any) => (
                 <MetricCard
                   key={kpi.label}
@@ -278,7 +278,7 @@ export function Tab21AIControl() {
                   </div>
                 </CardHeader>
                 <CardContent className="p-4 bg-white/60 dark:bg-background/60 backdrop-blur-sm">
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                     {guardrails.items?.map((item: any, i: number) => (
                       <div key={i}>
                         <p className="text-xs text-muted-foreground mb-1">{item.label}</p>

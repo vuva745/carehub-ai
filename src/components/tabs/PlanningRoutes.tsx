@@ -87,9 +87,9 @@ const PlanningRoutes = () => {
         </Button>
       </div>
 
-      <div className="grid grid-cols-3 gap-6 border-t border-purple-400/30 pt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 border-t border-purple-400/30 pt-6">
         {/* Client Info */}
-        <Card className="p-6 space-y-4 border border-purple-300/50 shadow-[0_0_15px_rgba(168,85,247,0.3)] hover:shadow-[0_0_25px_rgba(168,85,247,0.5)] transition-all">
+        <Card className="p-4 sm:p-6 space-y-4 border border-purple-300/50 shadow-[0_0_15px_rgba(168,85,247,0.3)] hover:shadow-[0_0_25px_rgba(168,85,247,0.5)] transition-all">
           <div className="flex items-center justify-between">
             <h3 className="text-lg font-semibold text-purple-700 dark:text-purple-300">Client</h3>
             <Badge variant="outline" className="text-xs border-purple-300/50 bg-purple-100/50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 shadow-[0_0_5px_rgba(168,85,247,0.3)]">Active</Badge>
@@ -175,7 +175,7 @@ const PlanningRoutes = () => {
       </div>
 
       {/* New 3-Column Layout */}
-      <div className="grid grid-cols-3 gap-6 border-t border-purple-400/30 pt-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 border-t border-purple-400/30 pt-6">
         {/* Left Column */}
         <div className="space-y-4">
           {/* NURSE Card */}

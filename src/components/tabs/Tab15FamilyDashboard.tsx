@@ -80,7 +80,7 @@ export function Tab15FamilyDashboard() {
   const lastUpdate = snapshot.find((i: any) => i.label === "Last Update")?.value || "-";
 
   return (
-    <div className="p-6 space-y-6 animate-fade-in bg-gradient-to-br from-purple-50 via-purple-100/50 to-violet-100/30 dark:from-purple-950/20 dark:via-background dark:to-background min-h-full border-2 border-purple-400/50 shadow-[0_0_20px_rgba(168,85,247,0.5)] rounded-lg">
+    <div className="p-4 sm:p-6 space-y-6 animate-fade-in bg-gradient-to-br from-purple-50 via-purple-100/50 to-violet-100/30 dark:from-purple-950/20 dark:via-background dark:to-background min-h-full border-2 border-purple-400/50 shadow-[0_0_20px_rgba(168,85,247,0.5)] rounded-lg">
       <div className="flex items-center justify-between flex-wrap gap-4">
         <div>
           <div className="flex items-center gap-3">
@@ -461,7 +461,7 @@ export function Tab15FamilyDashboard() {
               <CardTitle className="text-base text-purple-900 dark:text-purple-100 drop-shadow-[0_0_2px_rgba(168,85,247,0.3)]">Health Assessments</CardTitle>
             </CardHeader>
             <CardContent className="p-4 space-y-4 bg-white/60 dark:bg-background/60 backdrop-blur-sm">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <p className="text-sm text-purple-800/70 dark:text-purple-300/70">Glucose Level</p>
                   <p className="text-2xl font-bold text-purple-900 dark:text-purple-100">5.9 <span className="text-sm font-normal">mmol/L</span></p>
@@ -471,7 +471,7 @@ export function Tab15FamilyDashboard() {
                   <p className="text-2xl font-bold text-purple-900 dark:text-purple-100">125<span className="text-lg">/82</span> <span className="text-sm font-normal">mmHg</span></p>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <p className="text-sm text-purple-800/70 dark:text-purple-300/70 flex items-center gap-1"><Activity className="w-3 h-3" /> Heart Rate</p>
                   <p className="text-xl font-bold text-purple-900 dark:text-purple-100">68 <span className="text-sm font-normal">bpm</span></p>

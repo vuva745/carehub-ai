@@ -109,7 +109,7 @@ const MaterialsStock = () => {
         </div>
       </Card>
 
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         <Card className="p-6">
           <div className="flex items-center gap-3 mb-3">
             <Package className="w-8 h-8 text-primary" />
@@ -184,7 +184,7 @@ const MaterialsStock = () => {
             {/* Quick Actions */}
             <div className="space-y-2">
               <Label>Quick Questions</Label>
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {[
                   "Low stock items?",
                   "Reorder suggestions",

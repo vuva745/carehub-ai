@@ -210,7 +210,7 @@ export function Tab19SkillLab() {
   };
 
   return (
-    <div className="p-6 space-y-6 animate-fade-in bg-gradient-to-br from-purple-50 via-purple-100/50 to-violet-100/30 dark:from-purple-950/20 dark:via-background dark:to-background min-h-full flex flex-col border-2 border-purple-400/50 shadow-[0_0_20px_rgba(168,85,247,0.5)] rounded-lg">
+    <div className="p-4 sm:p-6 space-y-6 animate-fade-in bg-gradient-to-br from-purple-50 via-purple-100/50 to-violet-100/30 dark:from-purple-950/20 dark:via-background dark:to-background min-h-full flex flex-col border-2 border-purple-400/50 shadow-[0_0_20px_rgba(168,85,247,0.5)] rounded-lg">
       <div className="flex items-center justify-between flex-wrap gap-4">
         <div>
           <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-700 to-violet-600 bg-clip-text text-transparent tracking-wide">SkillLab & Certification</h1>
@@ -279,7 +279,7 @@ export function Tab19SkillLab() {
 
               {/* KPI Cards */}
               {data19_1?.layout?.find((l: any) => l.type === "kpi_cards") && (
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                   {data19_1.layout.find((l: any) => l.type === "kpi_cards").items.map((kpi: any) => (
                     <MetricCard
                       key={kpi.label}
@@ -680,7 +680,7 @@ export function Tab19SkillLab() {
 
               {/* KPI Cards */}
               {data19_2?.layout?.find((l: any) => l.type === "kpi_cards") && (
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                   {data19_2.layout.find((l: any) => l.type === "kpi_cards").items.map((kpi: any) => (
                     <MetricCard
                       key={kpi.label}
@@ -704,7 +704,7 @@ export function Tab19SkillLab() {
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="p-4 bg-white/60 dark:bg-background/60 backdrop-blur-sm">
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                         {policy.items?.map((item: any, i: number) => (
                           <div key={i}>
                             <p className="text-xs text-muted-foreground mb-1">{item.label}</p>
@@ -1065,7 +1065,7 @@ export function Tab19SkillLab() {
 
               {/* KPI Cards */}
               {data19_3?.layout?.find((l: any) => l.type === "kpi_cards") && (
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                   {data19_3.layout.find((l: any) => l.type === "kpi_cards").items.map((kpi: any) => (
                     <MetricCard
                       key={kpi.label}
@@ -1112,7 +1112,7 @@ export function Tab19SkillLab() {
                       </div>
                     </CardHeader>
                     <CardContent className="p-4 bg-white/60 dark:bg-background/60 backdrop-blur-sm">
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                         {cpd.items?.map((item: any, i: number) => (
                           <div key={i}>
                             <p className="text-xs text-muted-foreground mb-1">{item.label}</p>
@@ -1414,7 +1414,7 @@ export function Tab19SkillLab() {
           </DialogHeader>
           {selectedModule && (
             <div className="py-4 space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-900/30 dark:to-violet-900/30 rounded-lg border border-purple-300/30">
                   <p className="text-sm text-muted-foreground mb-1">Level</p>
                   <Badge variant="outline">{selectedModule.level || "N/A"}</Badge>
@@ -1467,7 +1467,7 @@ export function Tab19SkillLab() {
           </DialogHeader>
           {selectedCert && (
             <div className="py-4 space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-900/30 dark:to-violet-900/30 rounded-lg border border-purple-300/30">
                   <p className="text-sm text-muted-foreground mb-1">Status</p>
                   <Badge className={
@@ -1529,7 +1529,7 @@ export function Tab19SkillLab() {
           </DialogHeader>
           {selectedRequest && (
             <div className="py-4 space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-900/30 dark:to-violet-900/30 rounded-lg border border-purple-300/30">
                   <p className="text-sm text-muted-foreground mb-1">Status</p>
                   <Badge className={
@@ -1592,7 +1592,7 @@ export function Tab19SkillLab() {
           </DialogHeader>
           {selectedEvidence && (
             <div className="py-4 space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-900/30 dark:to-violet-900/30 rounded-lg border border-purple-300/30">
                   <p className="text-sm text-muted-foreground mb-1">Type</p>
                   <Badge variant="outline">{selectedEvidence.type || "N/A"}</Badge>
@@ -1720,7 +1720,7 @@ export function Tab19SkillLab() {
           </DialogHeader>
           {selectedCheck && (
             <div className="py-4 space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-900/30 dark:to-violet-900/30 rounded-lg border border-purple-300/30">
                   <p className="text-sm text-muted-foreground mb-1">Skill</p>
                   <p className="font-semibold">{selectedCheck.skill || "N/A"}</p>
@@ -1778,7 +1778,7 @@ export function Tab19SkillLab() {
           </DialogHeader>
           {selectedCertificate && (
             <div className="py-4 space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-900/30 dark:to-violet-900/30 rounded-lg border border-purple-300/30">
                   <p className="text-sm text-muted-foreground mb-1">Status</p>
                   <Badge className={
@@ -2178,7 +2178,7 @@ export function Tab19SkillLab() {
             const cpd = data19_3.layout.find((l: any) => l.type === "cpd_summary");
             return (
               <div className="py-4 space-y-4">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {cpd.items?.map((item: any, i: number) => (
                     <div key={i} className="p-4 bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-900/30 dark:to-violet-900/30 rounded-lg border border-purple-300/30">
                       <p className="text-xs text-muted-foreground mb-1">{item.label}</p>
@@ -2476,7 +2476,7 @@ export function Tab19SkillLab() {
               />
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="training-hours">Hours</Label>
                 <Input

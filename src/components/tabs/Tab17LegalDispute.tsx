@@ -164,7 +164,7 @@ export function Tab17LegalDispute() {
   };
 
   return (
-    <div className="p-6 space-y-6 animate-fade-in bg-gradient-to-br from-purple-50 via-purple-100/50 to-violet-100/30 dark:from-purple-950/20 dark:via-background dark:to-background min-h-full border-2 border-purple-400/50 shadow-[0_0_20px_rgba(168,85,247,0.5)] rounded-lg">
+    <div className="p-4 sm:p-6 space-y-6 animate-fade-in bg-gradient-to-br from-purple-50 via-purple-100/50 to-violet-100/30 dark:from-purple-950/20 dark:via-background dark:to-background min-h-full border-2 border-purple-400/50 shadow-[0_0_20px_rgba(168,85,247,0.5)] rounded-lg">
       <div className="flex items-center justify-between flex-wrap gap-4">
         <div className="flex items-center gap-4">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-700 to-violet-600 bg-clip-text text-transparent tracking-wide">
@@ -182,7 +182,7 @@ export function Tab17LegalDispute() {
       )}
 
       {/* KPI Cards */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-6">
         {kpiCards.map((kpi: any) => (
           <MetricCard
             key={kpi.label}
@@ -203,7 +203,7 @@ export function Tab17LegalDispute() {
             </CardTitle>
           </CardHeader>
           <CardContent className="p-4 bg-white/60 dark:bg-background/60 backdrop-blur-sm">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
               {filters.items?.map((filterItem: any) => (
                 <div key={filterItem.key} className="space-y-2">
                   <Label className="text-xs">{filterItem.label}</Label>
@@ -546,7 +546,7 @@ export function Tab17LegalDispute() {
                     {disputes.length > 0 ? (
                       <div className="space-y-4">
                         {/* Summary Stats */}
-                        <div className="grid grid-cols-4 gap-4 mb-6">
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
                           <div className="p-4 bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-900/30 dark:to-violet-900/30 rounded-lg border border-purple-300/30">
                             <p className="text-sm text-muted-foreground mb-1">Total Cases</p>
                             <p className="text-2xl font-bold text-purple-700 dark:text-purple-300">{disputes.length}</p>
@@ -675,7 +675,7 @@ export function Tab17LegalDispute() {
                                                 </DialogDescription>
                                               </DialogHeader>
                                               <div className="py-4 space-y-4">
-                                                <div className="grid grid-cols-2 gap-4">
+                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                                   <div className="p-4 bg-gradient-to-br from-purple-50/50 to-violet-50/50 dark:from-purple-900/30 dark:to-violet-900/30 rounded-lg border border-purple-300/30">
                                                     <p className="text-sm text-muted-foreground mb-1">Case ID</p>
                                                     <code className="text-sm font-mono bg-muted px-2 py-1 rounded">{case_.id || "N/A"}</code>
@@ -824,7 +824,7 @@ export function Tab17LegalDispute() {
               <CardTitle className="text-lg text-purple-900 dark:text-purple-100 drop-shadow-[0_0_2px_rgba(168,85,247,0.3)]">Verified Legal Dispute Tracker</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 bg-white/60 dark:bg-background/60 backdrop-blur-sm animate-fade-in p-6">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <MetricCard 
                   title="Ongoing Cases" 
                   value={String(disputes.filter((d: any) => d.status !== "resolved").length)} 

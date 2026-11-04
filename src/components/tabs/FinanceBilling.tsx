@@ -36,7 +36,7 @@ Sep 12,GOODHEALTH,$860.0`;
       </div>
 
       {/* Financial Metrics */}
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
         <Card className="p-6">
           <div className="flex items-center justify-between mb-2">
             <h3 className="text-sm font-medium text-muted-foreground">TOTAL REVENUE</h3>
@@ -74,7 +74,7 @@ Sep 12,GOODHEALTH,$860.0`;
         </Card>
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {/* Revenue Overview */}
         <Card className="p-6">
           <h3 className="text-lg font-semibold text-primary mb-4">REVENUE OVERVIEW</h3>
@@ -125,7 +125,7 @@ Sep 12,GOODHEALTH,$860.0`;
         </Card>
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {/* Expenses Breakdown */}
         <Card className="p-6">
           <h3 className="text-lg font-semibold text-primary mb-4">EXPENSES BREAKDOWN</h3>
@@ -185,9 +185,9 @@ Sep 12,GOODHEALTH,$860.0`;
       </div>
 
       {/* NEOCARE Branding */}
-      <Card className="p-8 bg-gradient-to-br from-primary/10 to-accent/10">
+      <Card className="p-4 sm:p-8 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="text-center">
-          <h3 className="text-5xl font-bold text-foreground">NEOCARE</h3>
+          <h3 className="text-3xl sm:text-5xl font-bold text-foreground">NEOCARE</h3>
           <p className="text-muted-foreground mt-2">Financial Management System</p>
         </div>
       </Card>
